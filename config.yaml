@@ -1,8 +1,8 @@
-baseurl: https://example.com
-languageCode: en-us
+baseurl: https://aqua256.github.io/
+languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
+title: aqua256's blog
 
 TimeZone: Asia/Shanghai
 
@@ -13,7 +13,7 @@ languages:
     #     weight: 1
     zh-cn:
         languageName: 中文
-        title: 演示站点
+        title: aqua256
         weight: 2
 
 # Change it to your Disqus shortname before using
@@ -66,7 +66,7 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
+        enabled: false
         provider: disqus
 
         disqusjs:
@@ -232,7 +232,7 @@ markup:
         lineNumbersInTable: true
         tabWidth: 4
 
-# enableGitInfo: true
+enableGitInfo: true
 
-# frontmatter:
-#     lastmod: [":git", "lastmod"]
+frontmatter:
+    lastmod: [":git", "lastmod"]
