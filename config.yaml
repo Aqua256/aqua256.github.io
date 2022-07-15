@@ -133,7 +133,7 @@ params:
             emitMetadata: 0
 
         gitalk:
-            owner: "aqua256"
+            owner: 
             admin: "aqua256"
             repo: "blog_gittalk"
             clientID: "dd5db2121f03b5637113"
