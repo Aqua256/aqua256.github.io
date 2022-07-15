@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-18.04
     env:
       TZ: Asia/Shanghai
-      SOURCE_REPO: "Aqua256/aqua256.github.io"  # 博客源码仓库
-      TARGET_REPO: "Aqua256/aqua256.github.io"  # 博客部署仓库
+      SOURCE_REPO: "aqua256/aqua256.github.io"  # 博客源码仓库
+      TARGET_REPO: "aqua256/aqua256.github.io"  # 博客部署仓库
       TARGET_BRANCH: "gh-pages"  # 博客部署的分支名
       SECRET: ${{ secrets.PERSONAL_TOKEN }}
     steps:
@@ -33,7 +33,7 @@ jobs:
       # 安装 hugo (v0.88.1)
       - name: Setup Hugo
         run:
-          wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.88.1/hugo_extended_0.88.1_Linux-64bit.deb && sudo dpkg -i hugo.deb && hugo version
+          wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb && sudo dpkg -i hugo.deb && hugo version
 
       # 构建网站
       - name: Build
