@@ -66,8 +66,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: gitalk
 
         disqusjs:
             shortname:
@@ -133,11 +133,11 @@ params:
             emitMetadata: 0
 
         gitalk:
-            owner:
-            admin:
-            repo:
-            clientID:
-            clientSecret:
+            owner: "aqua256"
+            admin: "aqua256"
+            repo: "blog_gittalk"
+            clientID: "dd5db2121f03b5637113"
+            clientSecret: "382118bbe819b8b1554dd96151149f2fc19e43ff"
 
         cusdis:
             host:
@@ -232,12 +232,12 @@ markup:
         lineNumbersInTable: true
         tabWidth: 4
 
-outputs:
-  home:
-  - HTML
-  - RSS
-  page:
-  - HTML
+# outputs:
+#   home:
+#   - HTML
+#   - RSS
+#   page:
+#   - HTML
 
 enableGitInfo: true
 
